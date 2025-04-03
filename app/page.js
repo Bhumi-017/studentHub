@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { supabase } from "./lib/supabase";
 
@@ -11,7 +10,7 @@ export default function Home() {
   },[])
 
   async function loadStudentList() {
-    const {data,error} =  await supabase.from("Student").select();
+    const {data,error} =  await supabase.from("student").select();
     if(error) {
       alert(JSON.stringify(error))
     }

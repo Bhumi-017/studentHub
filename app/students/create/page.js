@@ -15,7 +15,7 @@ export default function createStudent() {
     const [gender, setgender] = useState("");
 
     return (
-        <div className='min-h-screen flex flex-col justify-center items-center mt-8'>
+        <div className='min-h-screen gap-2 flex flex-col justify-center items-center'>
             <h1 className='text-3xl font-bold text-green-500 mb-6'>Create Student</h1>
             <h1  className="ml-2 mb-8" ><User2Icon size={20}/></h1>
 
